@@ -31,7 +31,7 @@ jobs:
       uses: trilom/file-changes-action@a6ca26c14274c33b15e6499323aac178af06ad4b # v1.2.4
       with:
         output: ' '
-    - name: Report list of changed files
+    - name: Report list of modified files
       run: |
         echo Changed files: ${{ steps.get_file_changes.outputs.files }}
     - name: Set up Python 3.9
